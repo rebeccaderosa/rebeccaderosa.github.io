@@ -1,0 +1,13 @@
+# Links shown in the top bar of the website, in this order.
+main:
+  - title: "Publications"
+    url: /publications/
+
+  - title: "Projects"
+    url: /portfolio/
+
+  - title: "Teaching"
+    url: /teaching/
+
+  - title: "CV"
+    url: /cv/
