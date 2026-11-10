@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" font-family="Helvetica,sans-serif" font-size="10"><rect width="160" height="160" fill="#f4f6fa"/>
+<rect x="45" y="10" width="70" height="24" rx="4" fill="#3e73b0"/><text x="80" y="26" fill="#fff" text-anchor="middle">CodeQL</text>
+<rect x="45" y="52" width="70" height="22" rx="4" fill="#fff" stroke="#3e73b0"/><text x="80" y="67" text-anchor="middle" fill="#333">Analyzer</text>
+<rect x="45" y="92" width="70" height="22" rx="4" fill="#fff" stroke="#3e73b0"/><text x="80" y="107" text-anchor="middle" fill="#333">Suggestor</text>
+<rect x="45" y="132" width="70" height="22" rx="4" fill="#fff" stroke="#3e73b0"/><text x="80" y="147" text-anchor="middle" fill="#333">Creator</text>
+<g stroke="#f09228" stroke-width="2"><line x1="80" y1="34" x2="80" y2="52"/><line x1="80" y1="74" x2="80" y2="92"/><line x1="80" y1="114" x2="80" y2="132"/></g>
+<path d="M115 143 h22 v-131 h-22" fill="none" stroke="#f09228" stroke-width="1.5" stroke-dasharray="3 3"/></svg>

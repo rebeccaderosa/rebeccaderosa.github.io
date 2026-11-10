@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" font-family="Menlo,monospace" font-size="9"><rect width="160" height="160" fill="#1f2733"/>
+<text x="12" y="28" fill="#7fb3e8">def query(uid):</text><text x="20" y="44" fill="#ccc">sql = "SELECT *</text><text x="20" y="58" fill="#ccc">  WHERE id=" + uid</text><rect x="16" y="48" width="128" height="14" fill="none" stroke="#f05d5d" stroke-width="1.5"/>
+<text x="20" y="74" fill="#ccc">db.execute(sql)</text>
+<g font-family="Helvetica,sans-serif" font-size="9"><rect x="10" y="98" width="42" height="18" rx="3" fill="#f05d5d"/><text x="31" y="110" text-anchor="middle" fill="#fff">detect</text>
+<rect x="59" y="98" width="42" height="18" rx="3" fill="#f09228"/><text x="80" y="110" text-anchor="middle" fill="#fff">exploit</text>
+<rect x="108" y="98" width="42" height="18" rx="3" fill="#4caf7a"/><text x="129" y="110" text-anchor="middle" fill="#fff">fix+test</text>
+<text x="80" y="140" text-anchor="middle" fill="#aaa">→ human review</text></g></svg>

@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" font-family="Menlo,monospace" font-size="10"><rect width="160" height="160" fill="#f4f6fa"/>
+<rect x="18" y="26" width="124" height="84" rx="4" fill="#2c3e50"/><text x="28" y="48" fill="#f09228">Route::get(</text><text x="36" y="64" fill="#9fd39f">'/hello',</text><text x="36" y="80" fill="#ddd">fn() =&gt; view())</text><text x="28" y="96" fill="#ddd">;</text>
+<rect x="70" y="110" width="20" height="28" fill="#888"/><rect x="40" y="136" width="80" height="6" fill="#888"/></svg>

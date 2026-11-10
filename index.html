@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Rebecca De Rosa</title>
+
+    <meta name="author" content="Rebecca De Rosa">
+    <meta name="description" content="Rebecca De Rosa: LLM agents for software security, evaluation and verification of AI systems.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+
+          <!-- ===================== Header ===================== -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Rebecca De Rosa
+                </p>
+                <p>
+                  I'm an LLM developer and research assistant at the <a href="https://www.sdu.dk/en">University of Southern Denmark (SDU)</a> in S&oslash;nderborg, where I build LLM-based agents for software security and lead the LLM development of a retrieval-augmented, human-in-the-loop document system.
+                </p>
+                <p>
+                  I received my MSc in Cybersecurity from <a href="https://www.polito.it/en">Politecnico di Torino</a> in 2026. I did my Master's thesis at SDU as an exchange student, advised by Adam Alami (SDU), Danilo Giordano and Matteo Boffa (Politecnico di Torino). Before that, I did my BSc in Computer Engineering, also at Politecnico di Torino.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:derosa.rebecca01@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="data/RebeccaDeRosa-CV.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/rebeccaderosa01/">LinkedIn</a> &nbsp;/&nbsp;
+                  <a href="https://arxiv.org/abs/2605.10601">arXiv</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                <a href="images/profile.svg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/profile.svg"></a>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- ===================== Research ===================== -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  I'm interested in how to evaluate, verify and monitor the behaviour of LLM agents, and in building the benchmarks and methods that make their failures measurable. Most of my work so far applies multi-agent LLM systems to vulnerability detection and static analysis. Some projects are <span class="highlight">highlighted</span>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr bgcolor="#ffffd0">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <img src="images/openbox.svg" width="160" alt="Open-box fallacy illustration">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2605.10601">
+                  <span class="papertitle">The Open-Box Fallacy: Why AI Deployment Needs a Calibrated Verification Regime</span>
+                </a>
+                <br>
+                P. M. Konrad, T. L. Adam, A. C. H. Merrild, R. Terrenzi,
+                <strong>Rebecca De Rosa</strong>,
+                T. Tanyel, S. Ayvaz
+                <br>
+                <em>arXiv</em>, 2026
+                <br>
+                <a href="https://arxiv.org/abs/2605.10601">arXiv</a>
+                <p></p>
+                <p>
+                  Argues that the decision to deploy an AI system should rest on scoped, independently checkable verification and on monitoring after deployment, not on mechanistic explanation alone. Proposes a reportable <em>Verification Coverage</em> metric.
+                </p>
+              </td>
+            </tr>
+
+            <tr bgcolor="#ffffd0">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <img src="images/thesis.svg" width="160" alt="Three-agent pipeline diagram">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">A Hybrid Multi-Agent Architecture for Enhancing CodeQL Static Analysis with Large Language Models</span>
+                <br>
+                <strong>Rebecca De Rosa</strong>
+                <br>
+                <em>MSc Thesis</em>, Politecnico di Torino &amp; University of Southern Denmark, 2026
+                <p></p>
+                <p>
+                  A three-agent LangGraph pipeline (Analyzer, Suggestor, Creator) checks CodeQL results, finds gaps in its rules and drafts new CodeQL queries. On 26 real-world Python files from CVEfixes (CWE-78, CWE-79, CWE-89), the Analyzer found the correct vulnerability in far more files than CodeQL alone. GPT-5.2 and GPT-4o-mini were compared under identical settings, with an LLM-as-a-judge protocol for the proposed rules.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <img src="images/vuln.svg" width="160" alt="Agentic vulnerability detection illustration">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Agentic Vulnerability Detection with Industry Partners</span>
+                <br>
+                Research Assistant, University of Southern Denmark &mdash; with Umbraco and Unik
+                <br>
+                <em>Jan&ndash;Jun 2026</em>
+                <p></p>
+                <p>
+                  An AI system in which LLM agents find a vulnerability in source code, explain how it could be exploited and propose a fix. The fix is tested automatically before a person reviews it. Evaluated on a public benchmark and on real open-source and production code, the system uncovered a likely exploitable flaw in an open-source library. The evaluation also showed how public vulnerability labels can mislead benchmark scores.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <img src="images/rag.svg" width="160" alt="RAG pipeline illustration">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Retrieval-Augmented, Human-in-the-Loop Document Assistant</span>
+                <br>
+                LLM Developer, University of Southern Denmark (internal project)
+                <br>
+                <em>Jul 2026&ndash;present</em>
+                <p></p>
+                <p>
+                  A RAG pipeline that helps university employees with a document-based process. Scanned documents go through OCR (PaddleOCR) into structured JSON. They are then split into chunks, using a different method for tables and for paragraphs, and stored as embeddings in a vector database. An LLM answers each query from the retrieved passages, and an interface lets users review each answer with its source passages highlighted in the original scan.
+                </p>
+              </td>
+            </tr>
+
+          </tbody></table>
+
+          <!-- ===================== Teaching & more ===================== -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Teaching &amp; More</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <img src="images/teaching.svg" width="160" alt="Laravel code on a screen">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Teaching Assistant, Web Development</span>, University of Southern Denmark, Jul 2026&ndash;present
+                <br>
+                Bachelor-level course. I lead the exercise sessions, working through PHP and Laravel exercises with students.
+                <br><br>
+                <span class="papertitle">Private Tutor</span>, Turin, 2020&ndash;2024
+                <br>
+                Physics, mathematics, chemistry and computer science for middle and high school students.
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:16px;width:20%;vertical-align:top">
+                <h2 style="font-size:16px;text-align:right;color:#3e73b0">Skills</h2>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <strong>LLMs &amp; agents:</strong> LangChain, LangGraph, single- and multi-agent design, closed and open-source models (GPT, Claude, DeepSeek, Qwen), RAG architectures, prompt engineering
+                <br>
+                <strong>ML:</strong> PyTorch
+                <br>
+                <strong>Security:</strong> static analysis (CodeQL), vulnerability detection
+                <br>
+                <strong>Programming:</strong> Python, Java, C, C++, PHP (Laravel), Linux
+                <br>
+                <strong>Languages:</strong> Italian (native), English (C1)
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Website template adapted from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </tbody></table>
+  </body>
+</html>
