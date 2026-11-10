@@ -163,6 +163,7 @@ table.news td {
 }
 
 td.news-date {
+  font-weight: 700;
   width: 72px;
   white-space: nowrap;
   color: #555;
