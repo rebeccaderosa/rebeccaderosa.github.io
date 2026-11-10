@@ -24,10 +24,10 @@
                   Rebecca De Rosa
                 </p>
                 <p>
-                  I'm an LLM developer and research assistant at the <a href="https://www.sdu.dk/en">University of Southern Denmark (SDU)</a> in S&oslash;nderborg, where I build LLM-based agents for software security and lead the LLM development of a retrieval-augmented, human-in-the-loop document system.
+                  I'm an LLM developer and research assistant at the <a href="https://www.sdu.dk/en">University of Southern Denmark (SDU)</a> in S&oslash;nderborg, where I build LLM-based agents for software security and I am in charge of the LLM development of a retrieval-augmented, human-in-the-loop document system.
                 </p>
                 <p>
-                  I received my MSc in Cybersecurity from <a href="https://www.polito.it/en">Politecnico di Torino</a> in 2026. I did my Master's thesis at SDU as an exchange student, advised by Adam Alami (SDU), Danilo Giordano and Matteo Boffa (Politecnico di Torino). Before that, I did my BSc in Computer Engineering, also at Politecnico di Torino.
+                  I received my MSc in Cybersecurity from <a href="https://www.polito.it/en">Politecnico di Torino</a> in 2026. I did my Master's thesis at SDU as an exchange student. Before that, I did my BSc in Computer Engineering, also at Politecnico di Torino.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:derosa.rebecca01@gmail.com">Email</a> &nbsp;/&nbsp;
@@ -48,7 +48,7 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in how to evaluate, verify and monitor the behaviour of LLM agents, and in building the benchmarks and methods that make their failures measurable. Most of my work so far applies multi-agent LLM systems to vulnerability detection and static analysis. Some projects are <span class="highlight">highlighted</span>.
+                  I'm interested in how to evaluate, verify and monitor the behaviour of LLM agents, and in building the benchmarks and methods that make their failures measurable. My main current work is a retrieval-augmented system that answers questions over scanned documents and shows, for every answer, the source passages it is based on, so that people can check it. I have also applied single- and multi-agent LLM systems to vulnerability detection and static analysis. My main project is <span class="highlight">highlighted</span>.
                 </p>
               </td>
             </tr>
@@ -57,6 +57,23 @@
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
             <tr bgcolor="#ffffd0">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <img src="images/rag.svg" width="160" alt="RAG pipeline illustration">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Retrieval-Augmented, Human-in-the-Loop Document Assistant</span>
+                <br>
+                LLM Developer, University of Southern Denmark (internal project)
+                <br>
+                <em>Jul 2026&ndash;present</em>
+                <p></p>
+                <p>
+                  A RAG pipeline that helps university employees with a document-based process. Scanned documents go through OCR (PaddleOCR) into structured JSON. They are then split into chunks, using a different method for tables and for paragraphs, and stored as embeddings in a vector database. An LLM answers each query from the retrieved passages, and an interface lets users review each answer with its source passages highlighted in the original scan.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <img src="images/openbox.svg" width="160" alt="Open-box fallacy illustration">
               </td>
@@ -75,23 +92,6 @@
                 <p></p>
                 <p>
                   Argues that the decision to deploy an AI system should rest on scoped, independently checkable verification and on monitoring after deployment, not on mechanistic explanation alone. Proposes a reportable <em>Verification Coverage</em> metric.
-                </p>
-              </td>
-            </tr>
-
-            <tr bgcolor="#ffffd0">
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <img src="images/thesis.svg" width="160" alt="Three-agent pipeline diagram">
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <span class="papertitle">A Hybrid Multi-Agent Architecture for Enhancing CodeQL Static Analysis with Large Language Models</span>
-                <br>
-                <strong>Rebecca De Rosa</strong>
-                <br>
-                <em>MSc Thesis</em>, Politecnico di Torino &amp; University of Southern Denmark, 2026
-                <p></p>
-                <p>
-                  A three-agent LangGraph pipeline (Analyzer, Suggestor, Creator) checks CodeQL results, finds gaps in its rules and drafts new CodeQL queries. On 26 real-world Python files from CVEfixes (CWE-78, CWE-79, CWE-89), the Analyzer found the correct vulnerability in far more files than CodeQL alone. GPT-5.2 and GPT-4o-mini were compared under identical settings, with an LLM-as-a-judge protocol for the proposed rules.
                 </p>
               </td>
             </tr>
@@ -115,17 +115,17 @@
 
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
-                <img src="images/rag.svg" width="160" alt="RAG pipeline illustration">
+                <img src="images/thesis.svg" width="160" alt="Three-agent pipeline diagram">
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
-                <span class="papertitle">Retrieval-Augmented, Human-in-the-Loop Document Assistant</span>
+                <span class="papertitle">A Hybrid Multi-Agent Architecture for Enhancing CodeQL Static Analysis with Large Language Models</span>
                 <br>
-                LLM Developer, University of Southern Denmark (internal project)
+                <strong>Rebecca De Rosa</strong>
                 <br>
-                <em>Jul 2026&ndash;present</em>
+                <em>MSc Thesis</em>, Politecnico di Torino &amp; University of Southern Denmark, 2026
                 <p></p>
                 <p>
-                  A RAG pipeline that helps university employees with a document-based process. Scanned documents go through OCR (PaddleOCR) into structured JSON. They are then split into chunks, using a different method for tables and for paragraphs, and stored as embeddings in a vector database. An LLM answers each query from the retrieved passages, and an interface lets users review each answer with its source passages highlighted in the original scan.
+                  A three-agent LangGraph pipeline (Analyzer, Suggestor, Creator) checks CodeQL results, finds gaps in its rules and drafts new CodeQL queries. On 26 real-world Python files from CVEfixes (CWE-78, CWE-79, CWE-89), the Analyzer found the correct vulnerability in far more files than CodeQL alone. GPT-5.2 and GPT-4o-mini were compared under identical settings, with an LLM-as-a-judge protocol for the proposed rules.
                 </p>
               </td>
             </tr>
